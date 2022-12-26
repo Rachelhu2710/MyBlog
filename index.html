@@ -221,21 +221,561 @@
         </ul>
     </details>
     <h2>Week 3</h2>
-    <p>I learned how to format flex box and change the colour of the background according to the size
-        like flex-direction: column is to display the flex boxes in column while flex-direction: row will display flex boxes in rows
-    </p>
-    <h2>week 4</h2>
-    <p>I learned how resize picture and text according to the size of the screen so that content would not be cut
-        like using @media then the px size to resize and reformat the style so that content would not be cut off when display on
-        a smaller screen
-    </p>
-    <h2>week 5</h2>
-    <p> I learned how to create method, class, replacing certain naming, change colour or stlye of a particular portion
-        like document.querySelector("article") to display out the formating in article.
-        document.querySelector(".siteheader").style.color ="purple" to change the colour of the text. 
-        document.querySelector("article").remove("form") to remove form from article.
-        document.querySelector("h1").className = "name" to change the classname of h1 to name</p>
-        <h2>week 6</h2>
-        <p>I learned how to use javascript in html to display value user key in </p>
+    <details>
+        <summary><strong>HTML</strong></summary>
+        <ul>
+            <li>form action = "someurl.php" method = "post"</li>
+            <ul>
+                <li>action is the Information to be sent to that url</li>
+                <li>method is the type of http request</li>
+            </ul>
+            <li>input type = "text"</li>
+            <ul>
+                <li>input is to let user be able to input things in</li>
+                <li>type determines what can be input inside the box</li>
+                <details>
+                    <summary>Example:</summary>
+                    <li>Radio type</li>
+                    <input type="radio" value="13-20"> 13-20
+                    <li>checkbox type</li>
+                    <input type="checkbox" value="blue"> Blue
+                    <li>Email type</li>
+                    <input type="email" placeholder="Email">
+                    <li>Telephone type</li>
+                    <input type="telephone" placeholder="Phone Number">
+                    <li>Text type</li>
+                    <input type="text" placeholder="Name">
+                </details>
+            </ul>
+            <li>label</li>
+            <ul>
+                <li>lable is to place text before the input boxes</li>
+                <details>
+                    <summary>Example:</summary>
+                    <label>Name: <input type="text" placeholder="Name"> </label>
+                </details>
+            </ul>
+            <li>Validation</li>
+            <details>
+                <summary>Example:</summary>
+                <input type="email" placeholder="Email" required>
+            </details>
+        </ul>
+        <details>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+                <li>Descendant Selector</li>
+                <ul>
+                    <li>.class p a</li>
+                    <ul>
+                        <li>.class p is the p elemets in the class called class</li>
+                        <li>.class p a is the a element in p in class called class</li>
+                    </ul>
+                </ul>
+                <li>Grouping Selectors</li>
+                <ul>
+                    <li>h1, h2{...}</li>
+                    <ul>
+                        <li>It will apply to all h1,h2 elements</li>
+                    </ul>
+                </ul>
+                <li>Border</li>
+                <ul>
+                    <li>border-radius</li>
+                    <ul>
+                        <li>Make border round edge instead</li>
+                    </ul>
+                </ul>
+                <li>Media Query</li>
+                <ul>
+                    <li>@media screen and (min-width: 576px){}</li>
+                    <ul>
+                        <li>It will apply the rules inside when browser is at least 576px</li>
+                    </ul>
+                </ul>
+                <li>Positioning</li>
+                <ul>
+                    <li>Static</li>
+                    <li>Relative</li>
+                    <ul>
+                        <li>Moves elements around relative to where they would appear on the page</li>
+                        <li>Uses top,left,right,bottom properties to move the box</li>
+                        <li>For tweaking the position of an element without affecting its surrounding boxes</li>
+                    </ul>
+                    <li>Absolute</li>
+                    <ul>
+                        <li>Take elements out of the static flow of the page and place relative to the browser window</li>
+                    </ul>
+                    <li>Fixed</li>
+                    <ul>
+                        <li>Make elements don't scroll with the rest of the page (sticky)</li>
+                    </ul>
+                </ul>
+                <li>FlexBox</li>
+                <ul>
+                    <li>Shink or grow according to screen size</li>
+                    <li>Get flexible layout</li>
+                </ul>
+            </ul>
+        </details>
+    </details>
+    <h2>Week 4</h2>
+    <details>
+        <summary><strong>CSS</strong></summary>
+        Responsive Image
+        <ul>
+            <li>Setting a relative unit</li>
+            <ul>
+                <li>Example: width: 100%; height: auto;</li>
+            </ul>
+            <li>Scale image never larger than original size</li>
+            <ul>
+                <li>Example: max-width: 100%; width: 400px; height: auto;</li>
+            </ul>
+        </ul>
+    </details>
+    <details>
+        <summary><strong>Wireframe</strong></summary>
+        <ul>
+            <li>Indicative flow of how your design is</li>
+            <li>Simple box structure to tell the flow of a site and how the information flow</li>
+        </ul>
+    </details>
+    <h2>Week 5</h2>
+    <details>
+        <summary><strong>Javascript</strong></summary>
+        <ul>
+            <li>Creating Object</li>
+            <ul>
+                <li>Example: const sheleve =
+                    {
+                        name: "Display Sheleve",
+                        volume: 50,
+                        color: "white",
+                        shlvno: 6,
+                        items:
+                        {
+                            shelv1: "medals",
+                            shelv2: "books",
+                            shelv3: "models"
+                        }
+                    }</li>
+            </ul>
+            <li>Methods</li>
+            <ul>
+                <li>Example: openzip: function(zipstatus)
+                    {
+                        this.zipopen=zipstatus;
+                    }</li>
+            </ul>
+            <li>Classes</li>
+            <ul>
+                <li>Example: class Backpack {}</li>
+            </ul>
+            <li>DOM</li>
+            <ul>
+                <li>document.getElementsByClassName("siteheader")</li>
+                <ul>
+                    <li>this command gets the information from the html class call siteheader</li>
+                </ul>
+                <li>document.querySelector("article").remove("form")</li>
+                <ul>
+                    <li>Removes form from article</li>
+                </ul>
+                <li>document.querySelector("h1").className = "name"</li>
+                <ul>
+                    <li>Replace h1 classname to Name</li>
+                </ul>
+                <li>document.querySelector(".siteheader").style.color ="purple"</li>
+                <ul>
+                    <li>Changing .siteheader color to purple in css</li>
+                </ul>
+            </ul>
+        </ul>
+    </details>
+    <h2>Week 6</h2>
+    <details>
+        <summary><strong>Javascript</strong></summary>
+        <ul>
+            <li>Variable</li>
+            <ul>
+                <li>Is a named container for a value</li>
+                <li>Each variable must have as unique name</li>
+                <li>Example:</li>
+                <ul>
+                    <li>let amount = 20; console.log(amount);</li>
+                    <li>In this case amount is the variable name, 20 is the value</li>
+                    <li>console.log is to display the value in amount in this case</li>
+                </ul>
+            </ul>
+            <li>Statement</li>
+            <ul>
+                <li>Example:</li>
+                <ul>
+                    <li>console.log('Hi');</li>
+                    <li>This is to print out the word hi</li>
+                </ul>
+            </ul>
+            <li>Data Type</li>
+            <ul>
+                <li>Numbers</li>
+                <ul>
+                    <li>0.7</li>
+                    <li>let x = 2;</li>
+                </ul>
+                <li>String</li>
+                <ul>
+                    <li>'Hello'</li>
+                    <li>let myname = "Bob";</li>
+                </ul>
+                <li>Boolean</li>
+                <ul>
+                    <li>true</li>
+                    <li>let check = true;</li>
+                </ul>
+                <li>Array</li>
+                <ul>
+                    <li>let value = [4,5,6,"John"];</li>
+                </ul>
+            </ul>
+            <li>Comparison & Logical Operators</li>
+            <ul>
+                <li>Must be Equal to (===)</li>
+                <ul>
+                    <li>'8'=== 8 returns false</li>
+                    <ul>
+                        <li>As one is a string and the other is a number</li>
+                    </ul>
+                    <li>'8'==='8' returns true</li>
+                    <ul>
+                        <li>As both is a string</li>
+                    </ul>
+                </ul>
+                <li>Must be Not Equal to (!==)</li>
+                <ul>
+                    <li>8' !== 8 returns true</li>
+                    <ul>
+                        <li>As one is a string and the other is a number</li>
+                    </ul>
+                    <li>'8' !== '8' returns false</li>
+                    <ul>
+                        <li>As both is a string</li>
+                    </ul>
+                </ul>
+                <li>Is Equal to (==)</li>
+                <ul>
+                    <li>'Hello' == 'Goodbye' returns false</li>
+                    <ul>
+                        <li>As the string content is different</li>
+                    </ul>
+                    <li>5 == '5' returns true</li>
+                    <ul>
+                        <li>As the values is the same even though the type is different</li>
+                    </ul>
+                </ul>
+                <li>Not Equal to (!=)</li>
+                <ul>
+                    <li>'Hello' != 'Goodbye' returns true</li>
+                    <ul>
+                        <li>As the string content is different</li>
+                    </ul>
+                    <li>'Hello' != 'Hello' returns false</li>
+                    <ul>
+                        <li>As the values is the same even though the type is different</li>
+                    </ul>
+                </ul>
+                <li>Greater than (>)</li>
+                <ul>
+                    <li>8 > 7 returns true</li>
+                    <li>7 > 8 returns false</li>
+                </ul>
+                <li>Lesser than (<)</li>
+                <ul>
+                    <li>8 < 7 returns false</li>
+                    <li>7 < 8 returns true</li>
+                </ul>
+                <li>Greater than or equal to (>=)</li>
+                <ul>
+                    <li>8 >= 7 returns true</li>
+                    <li>7 >= 8 returns false</li>
+                    <li>8 >= 8 returns true</li>
+                </ul>
+                <li>Lesser than or equal to (<=)</li>
+                <ul>
+                    <li>8 <= 7 returns false</li>
+                    <li>7 <= 8 returns ture</li>
+                    <li>8 >= 8 returns true</li>
+                </ul>
+                <li>And (&&)</li>
+                <ul>
+                    <li>((2 < 5) && (3 >= 2)) returns true</li>
+                    <li>As 2 is less than 5 and 3 is more than 2</li>
+                    <li>Both must return true</li>
+                </ul>
+                <li>Or (||)</li>
+                <ul>
+                    <li>((2 < 5) || (3 >= 2)) returns true</li>
+                    <li>Either one must return true in order to return true at the end</li>
+                </ul>
+                <li>Not (!)</li>
+            </ul>
+            <li>For Loops</li>
+            <ul>
+                <li>for (let i = 0; i < 10; i++){console.log("Practice:" + i);}</li>
+                <ul>
+                    <li>for is the keyword for for loop</li>
+                    <li>let i = 0 is the initialization</li>
+                    <li>i < 10 is the condition</li>
+                    <li>i++ is to plus one each time the loop runs again</li>
+                    <li>What ever is inside {} this would run until i is greater or equal to 10</li>
+                </ul>
+            </ul>
+            <li>While Loops</li>
+            <ul>
+                <li>let i = 0; while (i < 10){console.log("Practice:" + i);i++;}</li>
+                <ul>
+                    <li>while is the keyword for while loop</li>
+                    <li>let i = 0 is the initialization</li>
+                    <li>i < 10 is the condition</li>
+                    <li>i++ is to plus one each time the loop runs again</li>
+                    <li>What ever is inside {} this would run until i is greater or equal to 10</li>
+                </ul>
+            </ul>
+            <li>Functions</li>
+            <ul>
+                <li>function sayHello() {document.write('Hello');} sayHello();</li>
+                <ul>
+                    <li>funtion is the keyword to create a function</li>
+                    <li>sayhello() is the function name</li>
+                    <li>Whatever is inside {} it will run when the function is called</li>
+                    <li>sayHello(); is to call the function and run</li>
+                </ul>
+            </ul>
+            <li>Objects</li>
+            <ul>
+                <li>Literal Object</li>
+                <ul>
+                    <li>let hotel = {
+                        name: 'Raffles Hotel',
+                        rooms: 100,
+                        booked: 24,
+                        gym: true,
+                        roomTypes:
+                        ['twin','suite','delux'],
+                        checkAvailability: function() {
+                        return this.rooms – this.booked;
+                        }};</li>
+                </ul>
+                <li>Accessing Object</li>
+                <ul>
+                    <li>let hotelname = hotel.name;</li>
+                    <ul>
+                        <li>hotel is the object name</li>
+                        <li>name is the property</li>
+                    </ul>
+                </ul>
+                <li>Update an Object</li>
+                <ul>
+                    <li>hotel.name = 'Favcho Royale Hotel';</li>
+                    <ul>
+                        <li>hotel is the object name</li>
+                        <li>name is the property</li>
+                        <li>'Favcho Royale Hotel' would be added into the hotel.name</li>
+                    </ul>
+                </ul>
+                <li>Delete an Object</li>
+                <ul>
+                    <li>delete hotel.name</li>
+                </ul>
+                <li>Function Based Object</li>
+                <ul>
+                    <li>function Hotel(name, rooms, booked){
+                        this.name = name;
+                        this.rooms = rooms;
+                        this.booked = booked;
+                        this.checkAvailability = function() {
+                        return this.rooms – this.booked;
+                        };
+                        }</li>
+                </ul>
+                <li>Multiple Object</li>
+                <ul>
+                    <li>let favchoHotel = new Hotel('Favcho Hotel', 100, 25);</li>
+                    <li>favchoHotel is the object</li>
+                    <li>new hotel() is the constructor function</li>
+                </ul>
+            </ul>
+            <li>Var</li>
+            <ul>
+                <li>Allows us to re-declare a variable</li>
+            </ul>
+            <li>Let</li>
+            <ul>
+                <li>Does not allows us to re-declare a variable</li>
+            </ul>
+            <li>for of loop</li>
+            <ul>
+                <li>let dailyExpenses = [29, 81, 43]; for (let expense of dailyExpenses){expense *= 2; console.log("Expense:" + expense);</li>
+                <li>for is the keyword for for of loop</li>
+                <li>let expense is the variable</li>
+                <li>of dailyExpenses is the array you want to go through</li>
+                <li>{} inside is the code to execute during the loop</li>
+            </ul>
+            <li>DOM</li>
+            <ul>
+                <li>Steps</li>
+                <ul>
+                    <li>Locate the node that represent the element you want to work with</li>
+                    <li>Use its text content, child element and attributes </li>
+                </ul>
+                <li>Accessing Elements</li>
+                <ul>
+                    <li>getElementById();</li>
+                    <ul>
+                        <li>Uses value of the id attribute</li>
+                        <li>Example: document.getElementById('one');</li>
+                    </ul>
+                    <li>querySelector();</li>
+                    <ul>
+                        <li>A CSS selector</li>
+                        <li>classes or id can be used</li>
+                        <li>returns the first mathcing element</li>
+                    </ul>
+                    <li>getElementsByClassName();</li>
+                    <ul>
+                        <li>select all the element in that class attribute</li>
+                    </ul>
+                    <li>getElementsByTagName();</li>
+                    <ul>
+                        <li>select all the elements that have that tagname</li>
+                    </ul>
+                    <li>querySelectorAll()</li>
+                    <ul>
+                        <li>CSS selector to select the matching element</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </details>
+    <h2>Week 7</h2>
+    <details>
+        <summary><strong>Javascript</strong></summary>
+        <ul>
+            <li>Event Listener</li>
+            <ul>
+                <li>element.addEventListener('event', functionName, [Boolean]);</li>
+                <li>Type of Event</li>
+                <ul>
+                    <li>load</li>
+                    <li>error</li>
+                    <li>resize</li>
+                    <li>Scroll</li>
+                    <li>click</li>
+                    <li>dblclick</li>
+                    <li>mousedown</li>
+                    <li>mouseup</li>
+                    <li>mousemove</li>
+                    <li>mouseover</li>
+                    <li>mouseout</li>
+                </ul>
+            </ul>
+            <li>Local Storage</li>
+            <ul>
+                <li>localStorage.setItem(key, value)</li>
+                <ul>
+                    <li>This is to add the value and the key into localStorage</li>
+                </ul>
+                <li>localStorage.getItem('name')</li>
+                <ul>
+                    <li>This is to get the value from the name key value in local storage</li>
+                </ul>
+                <li>localStorage.removeItem(key)</li>
+                <ul>
+                    <li>This is to remove the particular key value in local storage</li>
+                </ul>
+                <li>localStorage.clear()</li>
+                <ul>
+                    <li>This is to clear all the items in local storage</li>
+                </ul>
+            </ul>
+            <li>JSON Data Format</li>
+            <ul>
+                <li>{"name": "Pikachu","hp": 200,"attack": 999,"defense": 999,"type": "electric"}</li>
+                <li>Those before : are the keys</li>
+                <li>Those after : are the values</li>
+            </ul>
+        </ul>
+    </details>
+    <h2>Week 8</h2>
+    <details>
+        <summary><strong>jQuery</strong></summary>
+        <ul>
+            <li>Scripts</li>
+            <ul>
+                <li>scripts should be place before the closing of the body</li>
+            </ul>
+            <li>jQuery for CSS</li>
+            <ul>
+                <li>$('li.hot');</li>
+                <li>li.hot is the class name hot in the li selector</li>
+                <li>$('li.hot').css('background-color','green');</li>
+                <li>This will change the class name hot in li to green for the background color</li>
+            </ul>
+            <li>Update html</li>
+            <ul>
+                <li>$('li').html('<b>Updated</b>');</li>
+                <li>This will replace the text to updated in b tags</li>
+                <li>$('li').text('Updated');</li>
+                <li>This will replace the text to updated</li>
+            </ul>
+            <li>Effects</li>
+            <ul>
+                <li> $('#red-circle').click(function(){$(this).hide()})</li>
+                <ul>
+                    <li>When the id name call red-circle is click it will hide the circle</li>
+                </ul>
+                <li>.fadein</li>
+                <li>.fadeout</li>
+                <li>.slideUp</li>
+                <li>.slideDown</li>
+            </ul>
+        </ul>
+    </details> 
+    <details>
+        <summary><strong>API</strong></summary>
+        <ul>
+            <li>.load()</li>
+            <ul>
+                <li>Loads HTML fragment into an element</li>
+            </ul>
+            <li>.get()</li>
+            <ul>
+                <li>Loads data using get method</li>
+                <li>Request data from server</li>
+            </ul>
+            <li>.post()</li>
+            <ul>
+                <li>Loads data using post method</li>
+                <li>Sends data back to server</li>
+            </ul>
+            <li>getJSON()</li>
+            <ul>
+                <li>Loads json using get method</li>
+            </ul>
+            <li>.getScript()</li>
+            <ul>
+                <li>Loads and executes JavaScript data using GET</li>
+                <li>Used for JavaScript data</li>
+            </ul>
+            <li>status</li>
+            <ul>
+                <li>It gets the status code</li>
+            </ul>
+            <li>statusText</li>
+            <ul>
+                <li>It gets the status discription</li>
+            </ul>
+        </ul>
+    </details> 
 </body>
 </html>
