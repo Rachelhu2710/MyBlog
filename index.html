@@ -820,5 +820,99 @@
             </ul>
         </ul>
     </details>
+    <h2>Week 12</h2>
+    <details>
+        <summary><strong>API</strong></summary>
+        <ul>
+            <li>How Requst is Form</li>
+            <ul>
+                <li>API Link</li>
+                <li>Methods</li>
+                <ul>
+                    <li>GET: Retrive information from the api</li>
+                    <li>POST: Send the new data into api</li>
+                    <li>PATCH/PUT: Update existing data in api</li>
+                    <li>DELETE: Delete a data from api</li>
+                </ul>
+                <li>Header: Additional details provided for communication between client and server</li>
+                <li>Data</li>
+            </ul>
+            <details>
+                <summary>Example</summary>
+                <ul>
+                    <li>var settings = {
+                        "url":
+                        "https://api.data.gov.sg/v1/environment/p
+                        si?date=2020-12-01",
+                        "method": "GET",};
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>Status Code</summary>
+                <ul>
+                    <li>200</li>
+                    <ul>
+                        <li>Message: OK</li>
+                        <li>Description: The data was received and the operations was performed</li>
+                    </ul>
+                    <li>201</li>
+                    <ul>
+                        <li>Message: Created</li>
+                        <li>Description: The data was received and a new resource was created. The response needs to return the data 
+                            in the payload</li>
+                    </ul>
+                    <li>204</li>
+                    <ul>
+                        <li>Message: No content</li>
+                        <li>Description: Operations was successful but no data was returned in the response body. Useful when 
+                            deleting a data</li>
+                    </ul>
+                    <li>400</li>
+                    <ul>
+                        <li>Message: Bad Request</li>
+                        <li>Description: Server cannot accept the request because something went wrong on client side or the request
+                            that is send
+                        </li>
+                    </ul>
+                    <li>403</li>
+                    <ul>
+                        <li>Message: Forbidden</li>
+                        <li>Description: Client is not allowed to access</li>
+                    </ul>
+                    <li>404</li>
+                    <ul>
+                        <li>Message: Not Found</li>
+                        <li>Description: Computer not able to find the resource</li>
+                    </ul>
+                    <li>405</li>
+                    <ul>
+                        <li>Message: Method Not allowed</li>
+                        <li>Description: when sending delete request to server that doesn't support that method</li>
+                    </ul>
+                </ul>
+            </details>
+        </ul>
+    </details>
+    <h2>Week 14</h2>
+    <details>
+        <summary><strong>Lottie</strong></summary>
+        <ul>
+            <li>Its a animation</li>
+            <li>Can add Lottie animation using Javascript</li>
+            <li>Need import the lottie player before adding the animation in</li>
+            <li>Exmple on how load a lottie animation when a button is clicked:</li>
+            <ul>
+                <li>$("#log-in-button").click(function(e) {
+                    const player =document.querySelector('lottie-player');
+                    player.load('https://assets2.lottiefiles.com/packages/lf20_kkhbkdd3.json');
+                    $("lottie-player").css({"position":"absolute","z-index":"20"});
+                </li>
+                <li>
+                    lottie-player autoplay background="white" mode="normal" style="width:100%; height: 110%;">/lottie-player
+                </li>
+            </ul>
+        </ul>
+    </details> 
 </body>
 </html>
